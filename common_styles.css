@@ -1,11 +1,15 @@
-/* Rest of the CSS styles */
+/* Common stylesheets used in the webpage */
 
 
 body
 {
-    font-family: "Courier New", serif;
-    background-image: url(background_3.png);
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,
+    rgb(255, 255, 255),
+    rgba(127, 255, 212, 80%),
+    rgba(132, 112, 255, 50%),
+    rgba(255, 48, 48, 50%));
 }
 
 
@@ -24,6 +28,7 @@ body
 
 h1
 {
+    font-family: "Courier New", serif;
     font-size: 35px;
     color: rgb(0, 0, 0);
     text-align: center;
