@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Satellite-Simulator",
+    "description": "GUI Application where the user can create their own solar-system. Program is initially a N-body simulation."
+  },
+
+  {
+    "title": "Training & Nutrition Tracker",
+    "description": "GUI Application that takes entries as input, and makes it possible for user to display data as charts and trend-lines."
+  }
+]
