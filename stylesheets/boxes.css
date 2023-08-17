@@ -1,0 +1,27 @@
+
+
+/* Stylesheets for boxes, used in my webpage. */
+
+
+.textbox_left
+{
+    margin-left: 120px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+}
+
+
+.textbox_right
+{
+    margin-right: 120px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+}
