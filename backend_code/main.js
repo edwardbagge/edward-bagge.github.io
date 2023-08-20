@@ -1,6 +1,5 @@
 
-import { TextReader } from "./text_reader.js";
-import { JsonReader } from './data_reader.js';
+import { DataHandler } from './data_handling.js';
 
 
 async function main()
@@ -19,14 +18,9 @@ async function main()
 
     const work_experience_id = ['Job_A', 'Job_B', 'Job_C', 'Job_D', 'Job_E'];
 
-    await TextReader.getTexts(common_text_path, common_text_id);
-
-    await JsonReader.getContactInformation();
-    await JsonReader.getCommonSkills();
-    await JsonReader.getLanguageSkills();
-    await JsonReader.getDriversLicenses();
-
-    await TextReader.getTexts(work_experience_path, work_experience_id);
+    await DataHandler.getTexts(common_text_path, common_text_id);
+    await DataHandler.getData();
+    await DataHandler.getTexts(work_experience_path, work_experience_id);
 }
 
 main().then(() => {console.log('All operations in main have completed.')});
