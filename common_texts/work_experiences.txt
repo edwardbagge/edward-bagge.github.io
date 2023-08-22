@@ -1,0 +1,92 @@
+<li>
+<h4>Summer Trainee at Digital Support Team</h4>
+<section>
+<p>
+During the summers of 2022 & 2023, I had the opportunity to work with the digital services
+team at Konecranes. The team's main responsibilities involve defining, supporting, and
+launching new digital service products, including customer portals (YOURKONECRANES.COM),
+customer reporting solutions, and remote monitoring products (TRUCONNECT). <br><br>
+
+In my first summer, my tasks primarily revolved around data maintenance, translating
+content for customer portals, creating descriptions for service products, and analyzing
+the usage of customer portals. <br><br>
+
+During the second summer, I was entrusted with additional tasks and given more
+responsibilities. These included crafting new content for the info-pages in the customer
+portal and effectively solving and managing various support tasks. <br><br>
+
+This job provided me with valuable experience in using different IT systems, both
+commercial and the company's tailor-made programs. Moreover, it allowed me to gain
+insight into how a large company operates and how different teams collaboratively
+support one another internally.
+</p>
+</section>
+</li>
+
+<li>
+<h4>Mathematics Tutor for High School Students</h4>
+<section>
+<p>
+Since the beginning of 2022, I've been employed at Uplus, a Finnish company specializing
+in providing tutoring services for students of all ages. During my tenure, I have
+assisted more than 10 high school students, each seeking support for their matriculation
+exams. My responsibilities revolve around catering to the unique needs of each individual,
+with their preferences and learning styles guiding the sessions. <br><br>
+
+This job has provided me with the opportunity to be creative in how I teach the students,
+which has been very rewarding. Being a tutor can be mentally demanding due to the high
+expectations, but I have handled it with great proficiency. This is largely attributed to
+the genuine pleasure I experience witnessing the progress made by my students.
+</p>
+</section>
+</li>
+
+<li>
+<h4>Mathematics Teacher at Adult Education Center</h4>
+<section>
+<p>
+In the spring of 2023, I served as a teacher in a mathematics sprint course at Västra
+Nylands Folkhögskola. The course was designed for high school students preparing for
+their matriculation exams. I taught two groups over the span of five weekends, each
+group consisting of approximately 15 students. <br><br>
+
+The job was nice, it was a completely new thing for me, since I've earlier only taught
+one student at a time.
+</p>
+</section>
+</li>
+
+<li>
+<h4>Customer Service at Guest Harbour</h4>
+<section>
+<p>
+During the summers of 2016 - 2018 & 2020 - 2021, I had the opportunity to work at
+Ekenäs Gästhamn. As part of my role, I assisted customers in renting boat berths and
+provided additional services such as sauna facilities, laundry room access, and offering
+tourist information. It was a great experience, allowing me to showcase my strong
+customer service skills. <br><br>
+
+I also got the opportunity to take some shifts at the company's harbour terrace, Baywatch.
+The job included selling pizza, coffee and refreshing beverages. Additionally, I contributed
+to various tasks, such as table service, dishwashing, and supporting kitchen operations.
+</p>
+</section>
+</li>
+
+<li>
+<h4>Seasonal Assistant at Tire & Wheel Shop</h4>
+<section>
+<p>
+During the spring seasons of 2019 and 2020, I worked at Ekenäs Däckmarket. My role
+primarily involved supporting the regular workforce during the busy weeks in spring
+when the region underwent the annual shift from winter to summer tires. My responsibilities
+encompassed tasks such as washing and balancing wheels. Additionally, I was entrusted with
+the duty of maintaining the tire warehouse in optimal logistical condition. <br><br>
+
+The work was physically demanding, yet immensely rewarding due to the opportunity to
+collaborate with a dedicated team. The job provided an excellent platform for learning
+valuable skills. Notably, I acquired proficiency in effective teamwork and stress
+management, aptitudes that continue to serve me well to this day.
+</p>
+</section>
+</li>
