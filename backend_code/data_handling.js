@@ -22,7 +22,7 @@ export class DataHandler
                         container.appendChild(sectionHeader);
                     }
 
-                    for (const item of sectionData["data-list"])
+                    for (const item of sectionData["dataList"])
                     {
                         const li = document.createElement('li');
                         const p = document.createElement('p');
@@ -33,17 +33,35 @@ export class DataHandler
                             const value = item[key];
                             p.innerHTML = '<b>' + key + ':</b> ' + value;
                         }
+
                         else if (sectionData["id"] === 'commonSkills')
                         {
-                            const value = Object.values(item)[0];
-                            p.innerHTML = '<b>' + value + '</b>';
+                            const category = item["category"];
+                            const skills = item["skills"];
+
+                            const skillsUl = document.createElement('ul');
+                            const h4 = document.createElement('h4');
+                            h4.innerHTML = category;
+
+                            skills.forEach(skill =>
+                            {
+                                const skillLi = document.createElement('li');
+                                skillLi.innerHTML = '<p>' + skill + '</p>';
+                                skillsUl.appendChild(skillLi);
+                            });
+
+                            li.appendChild(h4);
+                            li.appendChild(skillsUl);
+                            li.classList.add('skill_box');
                         }
+
                         else if (sectionData["id"] === 'languageSkills')
                         {
                             const language = item["language"];
                             const fluency = item["fluency"];
                             p.innerHTML = language + ' (' + fluency + ')';
                         }
+
                         else if (sectionData["id"] === 'driversLicenses')
                         {
                             const type = item["type"];
@@ -66,17 +84,46 @@ export class DataHandler
         }
     }
 
-    static async getTexts(file_path_list, text_id_list)
+    static async getTexts(file_path, text_id)
     {
-        for (let index = 0; index < file_path_list.length; index++)
-        {
-            const scriptUrl = new URL(import.meta.url);
-            const filePath = new URL(file_path_list[index], scriptUrl).toString();
+        const scriptUrl = new URL(import.meta.url);
+        const filePath = new URL(file_path, scriptUrl).toString();
 
+        if (text_id === 'workExperiences')
+        {
+            let container = document.getElementById("workExperiences");
+
+            let rawFile = new XMLHttpRequest();
+            rawFile.open("GET", "../common_texts/work_experiences.txt", true);
+            rawFile.onreadystatechange = function ()
+            {
+                if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status === 0))
+                {
+                    let allText = rawFile.responseText;
+
+                    let parser = new DOMParser();
+                    let htmlDoc = parser.parseFromString(allText, 'text/html');
+
+                    let ulElement = document.createElement("ul");
+
+                    let liNodes = htmlDoc.querySelectorAll("li");
+                    liNodes.forEach(function (liNode)
+                    {
+                        ulElement.appendChild(liNode);
+                    });
+
+                    container.appendChild(ulElement);
+                }
+            }
+            rawFile.send(null);
+        }
+
+        else
+        {
             const response = await fetch(filePath);
             const text = await response.text();
+            const content = document.getElementById(text_id);
 
-            const content = document.getElementById(text_id_list[index]);
             content.innerHTML = `<p>${text.replace(/\n\n/g, '<br><br>\n')}</p>`;
         }
     }
