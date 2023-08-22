@@ -18,11 +18,17 @@ body
 .flex-container
 {
     display: flex;
-    justify-content: space-between;
 }
 
 
 .left-column, .right-column
 {
-    flex-basis: 45%;
+    flex: 0 0 calc(50% - 40px);
+    margin-right: 60px;
+}
+
+
+.right-column:last-child
+{
+    margin-right: 0;
 }
