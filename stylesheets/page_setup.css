@@ -1,0 +1,27 @@
+
+
+/* Page-setup, used in the webpage */
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,
+    rgba(255, 153, 18, 60%),
+    rgb(255, 248, 220),
+    rgba(0, 255, 255, 60%));
+}
+
+
+.flex-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-column, .right-column
+{
+    flex-basis: 45%;
+}

@@ -1,0 +1,39 @@
+
+
+/* Stylesheets for headers, used in my webpage. */
+
+
+h1
+{
+    font-family: "Courier New", serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+h3
+{
+    margin-left: 120px;
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    font-family: "Courier New", serif;
+    text-decoration: underline;
+    position: relative;
+}
+
+
+.right-column h3
+{
+    margin-left: 0;
+}
+
+
+h4
+{
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    font-family: "Courier New", serif;
+}
