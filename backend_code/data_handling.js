@@ -49,14 +49,12 @@ export class DataHandler
         for (const item of sectionData["dataList"])
         {
             const section = document.createElement('section');
-            const ul = document.createElement('ul');
+
             const h4 = document.createElement('h4');
+            const ul = document.createElement('ul');
 
             const category = item["category"];
             const skills = item["skills"];
-            h4.innerHTML = category;
-
-            section.appendChild(h4);
 
             skills.forEach(skill =>
             {
@@ -65,12 +63,14 @@ export class DataHandler
                 ul.appendChild(li);
             });
 
+            h4.innerHTML = category;
             section.appendChild(h4);
             section.appendChild(ul);
             section.classList.add('row');
             container.appendChild(section);
         }
     }
+
 
 
     fetchLanguageSkills(sectionData)
