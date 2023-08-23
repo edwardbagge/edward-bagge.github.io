@@ -14,20 +14,40 @@ body
 }
 
 
-.flex-container
+.flex_column_container
 {
     display: flex;
 }
 
 
-.left-column, .right-column
+.column
 {
-    flex: 0 0 calc(50% - 40px);
-    margin-right: 60px;
+    flex: 1;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
-.right-column:last-child
+.text_box
 {
-    margin-right: 0;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+.row
+{
+    margin: 10px;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 0, 0);
 }

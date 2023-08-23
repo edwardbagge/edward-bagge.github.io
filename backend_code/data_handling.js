@@ -1,81 +1,16 @@
 export class DataHandler
 {
-    static async getData()
+    async getData()
     {
         try
         {
             const response = await fetch('../personal_data/personal_data.json');
             const data = await response.json();
 
-            for (const sectionKey in data)
-            {
-                if (data.hasOwnProperty(sectionKey))
-                {
-                    const sectionData = data[sectionKey];
-                    const container = document.getElementById(sectionData["id"]);
-                    const ul = document.createElement('ul');
-
-                    if (sectionData["category"] !== undefined)
-                    {
-                        const sectionHeader = document.createElement('p');
-                        sectionHeader.innerHTML = '<p><b>' + sectionData["category"] + ':</b></p>';
-                        container.appendChild(sectionHeader);
-                    }
-
-                    for (const item of sectionData["dataList"])
-                    {
-                        const li = document.createElement('li');
-                        const p = document.createElement('p');
-
-                        if (sectionData["id"] === 'contactInformation')
-                        {
-                            const key = Object.keys(item)[0];
-                            const value = item[key];
-                            p.innerHTML = '<b>' + key + ':</b> ' + value;
-                        }
-
-                        else if (sectionData["id"] === 'commonSkills')
-                        {
-                            const category = item["category"];
-                            const skills = item["skills"];
-
-                            const skillsUl = document.createElement('ul');
-                            const h4 = document.createElement('h4');
-                            h4.innerHTML = category;
-
-                            skills.forEach(skill =>
-                            {
-                                const skillLi = document.createElement('li');
-                                skillLi.innerHTML = '<p>' + skill + '</p>';
-                                skillsUl.appendChild(skillLi);
-                            });
-
-                            li.appendChild(h4);
-                            li.appendChild(skillsUl);
-                            li.classList.add('skill_box');
-                        }
-
-                        else if (sectionData["id"] === 'languageSkills')
-                        {
-                            const language = item["language"];
-                            const fluency = item["fluency"];
-                            p.innerHTML = language + ' (' + fluency + ')';
-                        }
-
-                        else if (sectionData["id"] === 'driversLicenses')
-                        {
-                            const type = item["type"];
-                            const vehicle = item["vehicle"];
-                            p.innerHTML = type + ' (' + vehicle + ')';
-                        }
-
-                        li.appendChild(p);
-                        ul.appendChild(li);
-                    }
-
-                    container.appendChild(ul);
-                }
-            }
+            this.fetchContactInformation(data["contactInformation"]);
+            this.fetchCommonSkills(data["commonSkills"]);
+            this.fetchLanguageSkills(data["languageSkills"]);
+            this.fetchDriversLicenses(data["driversLicenses"]);
         }
 
         catch (error)
@@ -84,7 +19,113 @@ export class DataHandler
         }
     }
 
-    static async getTexts(file_path, text_id)
+
+    fetchContactInformation(sectionData)
+    {
+        const container = document.getElementById(sectionData["id"]);
+        const ul = document.createElement('ul');
+
+        for (const item of sectionData["dataList"])
+        {
+            const li = document.createElement('li');
+            const p = document.createElement('p');
+
+            const key = Object.keys(item)[0];
+            const value = item[key];
+
+            p.innerHTML = '<b>' + key + ':</b> ' + value;
+            li.appendChild(p);
+            ul.appendChild(li);
+        }
+
+        container.appendChild(ul);
+    }
+
+
+    fetchCommonSkills(sectionData)
+    {
+        const container = document.getElementById(sectionData["id"]);
+
+        for (const item of sectionData["dataList"])
+        {
+            const section = document.createElement('section');
+
+            const h4 = document.createElement('h4');
+            const ul = document.createElement('ul');
+
+            const category = item["category"];
+            const skills = item["skills"];
+
+            skills.forEach(skill =>
+            {
+                const li = document.createElement('li');
+                li.innerHTML = '<p>' + skill + '</p>';
+                ul.appendChild(li);
+            });
+
+            h4.innerHTML = category;
+            section.appendChild(h4);
+            section.appendChild(ul);
+            section.classList.add('row');
+            container.appendChild(section);
+        }
+    }
+
+
+
+    fetchLanguageSkills(sectionData)
+    {
+        const container = document.getElementById(sectionData["id"]);
+        const ul = document.createElement('ul');
+
+        const sectionHeader = document.createElement('p');
+        sectionHeader.innerHTML = '<p><b>' + sectionData["category"] + ':</b></p>';
+        container.appendChild(sectionHeader);
+
+        for (const item of sectionData["dataList"])
+        {
+            const li = document.createElement('li');
+            const p = document.createElement('p');
+
+            const language = item["language"];
+            const fluency = item["fluency"];
+            p.innerHTML = language + ' (' + fluency + ')';
+
+            li.appendChild(p);
+            ul.appendChild(li);
+        }
+
+        container.appendChild(ul);
+    }
+
+
+    fetchDriversLicenses(sectionData)
+    {
+        const container = document.getElementById(sectionData["id"]);
+        const ul = document.createElement('ul');
+
+        const sectionHeader = document.createElement('p');
+        sectionHeader.innerHTML = '<p><b>' + sectionData["category"] + ':</b></p>';
+        container.appendChild(sectionHeader);
+
+        for (const item of sectionData["dataList"])
+        {
+            const li = document.createElement('li');
+            const p = document.createElement('p');
+
+            const type = item["type"];
+            const vehicle = item["vehicle"];
+            p.innerHTML = type + ' (' + vehicle + ')';
+
+            li.appendChild(p);
+            ul.appendChild(li);
+        }
+
+        container.appendChild(ul);
+    }
+
+
+    async getTexts(file_path, text_id)
     {
         const scriptUrl = new URL(import.meta.url);
         const filePath = new URL(file_path, scriptUrl).toString();
