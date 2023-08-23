@@ -1,0 +1,54 @@
+
+
+/* Page-setup, used in the webpage */
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,
+    rgba(255, 153, 18, 60%),
+    rgb(255, 248, 220),
+    rgba(0, 255, 255, 60%));
+}
+
+
+.flex_container
+{
+    display: flex;
+}
+
+
+.column
+{
+    flex: 1;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.text_box
+{
+    overflow-wrap: break-word;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+.skill_box
+{
+    margin: 20px 20px 20px -20px;
+    padding: 0 20px 10px 20px;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 0, 0);
+    list-style: none;
+}
