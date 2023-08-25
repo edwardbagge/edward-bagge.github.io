@@ -1,0 +1,65 @@
+
+/* style-classes for all the buttons */
+
+
+#showContactInformation
+{
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 120px;
+
+    font: 20px "Courier New", serif;
+    font-weight: bold;
+
+    border: 3px solid rgba(0, 0, 0, 70%);
+    border-radius: 5px;
+
+    background: rgba(0, 0, 0, 30%);
+}
+
+#showContactInformation:hover
+{
+    border: 3px solid rgba(238, 232, 205, 70%);
+    background: rgba(238, 232, 205, 30%);
+
+    height: 45px;
+    width: 125px;
+}
+
+#showContactInformation:active
+{
+    border: 3px solid rgba(0, 255, 255, 70%);
+    background: rgba(0, 255, 255, 30%);
+}
+
+
+#hideContactInformation
+{
+    position: absolute;
+
+    height: 30px;
+    width: 90px;
+
+    font: 20px "Courier New", serif;
+    font-weight: bold;
+
+    border: 3px solid rgba(0, 0, 0, 70%);
+    border-radius: 5px;
+
+    background: rgba(0, 0, 0, 30%);
+}
+
+#hideContactInformation:hover
+{
+    border: 3px solid rgba(238, 232, 205, 70%);
+    background: rgba(238, 232, 205, 30%);
+}
+
+#hideContactInformation:active
+{
+    border: 3px solid rgba(255, 0, 0, 70%);
+    background: rgba(255, 0, 0, 30%);
+}
