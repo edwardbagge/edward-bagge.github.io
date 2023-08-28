@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Edward Bagge</title>
+
+    <link rel="stylesheet" href="stylesheets/page_setup.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/buttons.css">
+
+    <script type="module" src="backend_code/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>EDWARD BAGGE</h1>
+
+    <button id="showContactInformation">Contact</button>
+
+    <div id="contactBox">
+
+        <p><strong>Country: </strong>Finland</p>
+        <p><strong>City: </strong>Espoo</p><br>
+        <p><strong>Email: </strong>edwardjohnbagge@hotmail.com</p>
+        <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/edward-bagge-32a29a22b/">View Profile</a></p>
+        <p><strong>GitHub: </strong><a href="https://github.com/edwardbagge">View Profile</a></p>
+
+        <button id="hideContactInformation">Close</button>
+
+    </div>
+
+    <div class="flex_column_container">
+
+        <div class="column">
+
+            <div>
+                <h3>About me</h3>
+
+                <section class="text_box" id="introductionText"></section>
+            </div>
+
+            <div>
+                <h3>Skills</h3>
+
+                <section class="text_box" id="commonSkills"></section>
+            </div>
+
+        </div>
+
+        <!--
+
+            Here is where the program divides the page into left and right sides!
+
+        -->
+
+        <div class="column">
+
+            <div>
+                <h3>Work Experience</h3>
+
+                <section class="text_box" id="workExperiences"></section>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
