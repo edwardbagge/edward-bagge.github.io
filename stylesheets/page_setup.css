@@ -1,0 +1,69 @@
+
+/* Page-setup, used in the webpage */
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,
+    rgba(255, 0, 255, 50%),
+    rgb(255, 248, 220),
+    rgba(255, 48, 48, 70%));
+}
+
+
+.flex_column_container
+{
+    display: flex;
+}
+
+
+.column
+{
+    flex: 1;
+    margin: 0 60px 60px 60px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.text_box
+{
+    overflow-wrap: break-word;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+}
+
+
+.sub_content
+{
+    margin: 10px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 0, 0);
+}
+
+
+#contactBox
+{
+    display: none;
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+    height: 150px;
+    width: 350px;
+
+    border: 5px solid rgba(255, 255, 255, 60%);
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 40%);
+
+    padding: 10px;
+}

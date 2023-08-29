@@ -1,0 +1,35 @@
+<section class="sub_content">
+    <h4>Introduction</h4>
+    <p>
+        Hello there! I'm Edward Bagge, and I'm really happy you stumbled upon my website. I'm a 23 - year old
+        guy from Espoo, Finland. I'm a highly motivated guy who loves new challenges. Since a young age, I
+        have been adept at problem-solving and engaging in creative pursuits. <br><br>
+
+        Currently, my website is all about my CV, where I share my interests, hobbies, studies, work experiences,
+        and more. I hope you'll have a great time reading through it!
+    </p>
+</section>
+
+<section class="sub_content">
+    <h4>Hobbies & Interests</h4>
+    <p>
+        In my free time, I love doing sports. Right now, I'm into swimming, running, and hitting the gym
+        for some light workouts. Staying active not only keeps me physically fit but also helps me stay
+        mentally balanced. <br><br>
+
+        Besides sports, I thoroughly enjoy working on my own programming projects and creating 3D CAD drawings.
+        These activities allow me to express myself creatively, making the world of programming and CAD works
+        an exciting realm for me.
+    </p>
+</section>
+
+<section class="sub_content">
+    <h4>Studies</h4>
+    <p>
+        I am currently studying at Aalto-University, situated in Espoo, Finland. My major is mechanical
+        engineering, and I have data science as my minor. As you can see, my interests align closely with
+        my field of study. I commenced my studies in the autumn of 2020, and I plan to write my bachelor's
+        thesis in the autumn of 2023. Upon completing my bachelor's degree, I intend to proceed directly to
+        my master's studies.
+    </p>
+</section>

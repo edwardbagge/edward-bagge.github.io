@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
+
+/* Stylesheets for headers, used in my webpage. */
+
+
+h1
+{
+    font: 40px "OCR A Std", serif;
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+    margin: 100px 20px;
+}
+
+
+h3
+{
+    font: 21px "Courier New", serif;
+    color: rgb(0, 0, 0);
+
+    text-decoration: underline;
+    font-weight: bold;
+    position: relative;
+}
+
+
+h4
+{
+    font: 19px "Courier New", serif;
+    color: rgb(0, 0, 0);
+
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+
+ul li
+{
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 0.7;
+}
+
+
+ul li:before
+{
+    content: "»";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+p
+{
+    font: 17px "Verdana", serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+a
+{
+    font: 17px "Verdana", serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+a:hover
+{
+    background: rgba(127, 255, 212, 60%);
+    border: solid rgba(127, 255, 212, 60%);
+
+    border-radius: 5px;
+}

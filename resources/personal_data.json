@@ -1,0 +1,59 @@
+
+{
+  "commonSkills":
+    {
+      "id": "commonSkills",
+      "dataList":
+        [
+          {
+            "category": "Programming",
+            "skills":
+              [
+                "Python",
+                "C/C++",
+                "Qt6",
+                "CSS"
+              ]
+          },
+
+          {
+            "category": "CAD",
+            "skills":
+              [
+                "Solid Edge",
+                "PTC Creo Parametric"
+              ]
+          },
+
+          {
+            "category": "Task Management",
+            "skills":
+              [
+                "Git",
+                "ServiceNow",
+                "Jira Software"
+              ]
+          },
+
+          {
+            "category": "Language",
+            "skills":
+              [
+                "Finnish (Native)",
+                "Swedish (Native)",
+                "English (B1/B2)"
+              ]
+          },
+
+          {
+            "category": "Other",
+            "skills":
+              [
+                "Teaching / Tutoring",
+                "Customer Service",
+                "Digital Support"
+              ]
+          }
+        ]
+    }
+}
