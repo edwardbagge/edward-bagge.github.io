@@ -1,4 +1,4 @@
-<section class="div_content">
+<section class="sub_content">
     <h4>Summer Trainee at Digital Support Team</h4>
     <p>
         During the summers of 2022 & 2023, I had the opportunity to work with the digital services
@@ -21,7 +21,7 @@
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Mathematics Tutor for High School Students</h4>
     <p>
         Since the beginning of 2022, I've been employed at Uplus, a Finnish company specializing
@@ -37,20 +37,20 @@
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Mathematics Teacher at Adult Education Center</h4>
     <p>
-        In the spring of 2023, I served as a teacher in a mathematics sprint course at Västra
-        Nylands Folkhögskola. The course was designed for high school students preparing for
-        their matriculation exams. I taught two groups over the span of five weekends, each
-        group consisting of approximately 15 students. <br><br>
+        In the spring of 2023, I served as a teacher in a mathematics sprint course at Västra Nylands
+        Folkhögskola. The course was designed for high school students preparing for their matriculation
+        exams. I taught two groups over the span of five weekends, each group consisting of approximately
+        15 students. <br><br>
 
         The job was nice, it was a completely new thing for me, since I've earlier only taught
         one student at a time.
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Customer Service at Guest Harbour</h4>
     <p>
         During the summers of 2016 - 2018 & 2020 - 2021, I had the opportunity to work at
@@ -65,7 +65,7 @@
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Seasonal Assistant at Tire & Wheel Shop</h4>
     <p>
         During the spring seasons of 2019 and 2020, I worked at Ekenäs Däckmarket. My role

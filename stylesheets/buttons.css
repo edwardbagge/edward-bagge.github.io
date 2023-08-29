@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
 
 /* style-classes for all the buttons */
 
@@ -18,6 +19,7 @@
     border-radius: 5px;
 
     background: rgba(0, 0, 0, 30%);
+    color: rgb(0, 0, 0);
 }
 
 #showContactInformation:hover
@@ -40,26 +42,31 @@
 {
     position: absolute;
 
+    top: 10px;
+    right: 10px;
     height: 30px;
     width: 90px;
 
     font: 20px "Courier New", serif;
     font-weight: bold;
 
-    border: 3px solid rgba(0, 0, 0, 70%);
+    border: 3px solid rgba(255, 0, 0, 60%);
     border-radius: 5px;
 
-    background: rgba(0, 0, 0, 30%);
+    background: rgba(255, 0, 0, 20%);
+    color: rgb(0, 0, 0);
 }
+
 
 #hideContactInformation:hover
 {
-    border: 3px solid rgba(238, 232, 205, 70%);
-    background: rgba(238, 232, 205, 30%);
+    border: 3px solid rgba(255, 0, 0, 80%);
+    background: rgba(255, 0, 0, 40%);
 }
+
 
 #hideContactInformation:active
 {
-    border: 3px solid rgba(255, 0, 0, 70%);
-    background: rgba(255, 0, 0, 30%);
+    border: 3px solid rgba(238, 232, 205, 70%);
+    background: rgba(238, 232, 205, 30%);
 }

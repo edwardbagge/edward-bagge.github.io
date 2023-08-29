@@ -1,4 +1,4 @@
-<section class="div_content">
+<section class="sub_content">
     <h4>Introduction</h4>
     <p>
         Hello there! I'm Edward Bagge, and I'm really happy you stumbled upon my website. I'm a 23 - year old
@@ -10,7 +10,7 @@
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Hobbies & Interests</h4>
     <p>
         In my free time, I love doing sports. Right now, I'm into swimming, running, and hitting the gym
@@ -23,7 +23,7 @@
     </p>
 </section>
 
-<section class="div_content">
+<section class="sub_content">
     <h4>Studies</h4>
     <p>
         I am currently studying at Aalto-University, situated in Espoo, Finland. My major is mechanical

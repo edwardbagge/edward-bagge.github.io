@@ -41,7 +41,7 @@ export class DataHandler
 
             section.appendChild(h4);
             section.appendChild(ul);
-            section.classList.add('skill_box');
+            section.classList.add('sub_content');
 
             container.appendChild(section);
         }
@@ -57,11 +57,13 @@ export class DataHandler
         showContactBox.addEventListener("click", () =>
         {
             contactBox.style.display = "block";
+            showContactBox.style.display = "none";
         });
 
         closeContactBox.addEventListener("click", () =>
         {
             contactBox.style.display = "none";
+            showContactBox.style.display = "block";
         });
     }
 
