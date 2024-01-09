@@ -1,7 +1,7 @@
 <section class="sub_content">
     <h4>Introduction</h4>
     <p>
-        Hello there! I'm Edward Bagge, and I'm really happy you stumbled upon my website. I'm a 23 - year old
+        Hello there! I'm Edward Bagge, and I'm really happy you stumbled upon my website. I'm a 24 - year old
         guy from Espoo, Finland. I'm a highly motivated guy who loves new challenges. Since a young age, I
         have been adept at problem-solving and engaging in creative pursuits. <br><br>
 
@@ -28,7 +28,7 @@
     <p>
         I am currently studying at Aalto-University, situated in Espoo, Finland. My major is mechanical
         engineering, and I have data science as my minor. As you can see, my interests align closely with
-        my field of study. I commenced my studies in the autumn of 2020, and I plan to write my bachelor's
+        my field of study. I commenced my studies in the autumn of 2020, I did my bachelor's
         thesis in the autumn of 2023. Upon completing my bachelor's degree, I intend to proceed directly to
         my master's studies.
     </p>
